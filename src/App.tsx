@@ -3,8 +3,9 @@ function App() {
 
   return (
     <>
-      <h1 className="text-9xl text-teal-600 font-black">Hola mundo</h1>
-      <p className="text-5xl font-light">Provando</p>
+      <header className="bg-teal-400 py-5">
+        <h1 className="text-center text-4xl font-black">Calculadora de propinas y consumo</h1>
+      </header>
     </>
   )
 }
