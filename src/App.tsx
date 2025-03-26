@@ -7,7 +7,7 @@ import OrderContents from "./components/OrderContents";
 
 
 function App() {
-  const { order ,addItem, removeItem } = useOrder();
+  const { order ,addItem, removeItem, tip, setTip } = useOrder();
   return (
     <>
       <header className="bg-teal-400 py-5">
@@ -31,9 +31,11 @@ function App() {
             removeItem = {removeItem}
             />
             <TipPercentageForm
+            setTip = {setTip}
             />
             <OrderTotals
             order = {order}
+            tip = {tip}
             />
         </div>
       </main>
